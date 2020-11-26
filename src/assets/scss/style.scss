@@ -1,0 +1,16 @@
+@import "vars";
+@import "reset";
+
+body {
+  font-size: 21px;
+  font-family: "Gilroy", "Playfair Display";
+}
+
+/* Blocks */
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/levels";
+@import "blocks/portfolio";
+@import "blocks/reviews";
+@import "blocks/contact";
+@import "blocks/footer";

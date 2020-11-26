@@ -1,0 +1,228 @@
+.portfolio {
+  padding-top: 100px;
+  background-image: url(./../images/about/description-bg.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  &__header {
+    display: flex;
+    justify-content: center;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 40px;
+      h2 {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 139.4%;
+        letter-spacing: 9.7px;
+        text-transform: uppercase;
+        color: $yellow;
+      }
+      h1 {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 139.4%;
+        text-align: center;
+        letter-spacing: 0.2px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+.swiper {
+  .swiper-container {
+    width: 100%;
+    height: auto;
+  }
+  .swiper-image-small {
+    width: 102px;
+    height: 105px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    transition: 0.3s;
+    &:hover {
+      opacity: 0.7;
+    }
+    @media (max-width: $sm) {
+      width: 82px;
+      height: 85px;
+    }
+  }
+  .swiper-image-big {
+    @media (max-width: $lg) and (min-width: $md) {
+      height: 520px;
+    }
+    @media (max-width: $md) {
+      height: 370px;
+      right: 0;
+    }
+  }
+  .tab-content-container {
+    width: 545px;
+    @media (max-width: $md) {
+      width: 330px;
+    }
+  }
+
+  .swiper-button-next::after {
+    position: absolute;
+    bottom: 0;
+  }
+  .swiper-button-prev {
+    color: #ffffff;
+    @media (min-width: $md) {
+      position: absolute;
+      top: auto !important;
+      bottom: 30%;
+      right: 30%;
+      width: auto !important;
+      left: auto !important;
+    }
+  }
+  .swiper-button-next {
+    color: #ffffff;
+    @media (min-width: $md) {
+      position: absolute;
+      top: auto !important;
+      bottom: 30%;
+      right: 15%;
+      width: auto !important;
+      left: auto !important;
+    }
+  }
+  .swiper-pagination {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    display: flex;
+    justify-content: center;
+    width: auto !important;
+    left: auto !important;
+    @media (min-width: $md) {
+      position: absolute;
+      bottom: 50%;
+      right: 50%;
+      display: flex;
+      justify-content: center;
+      width: auto !important;
+      left: auto !important;
+    }
+    span {
+      margin-right: 20px;
+    }
+    .swiper-pagination-bullet-active {
+      background: $white;
+    }
+    .swiper-pagination-bullet {
+      background: rgba(255, 255, 255, 0.918);
+    }
+  }
+  .tab-pane {
+    width: 463px;
+  }
+  .swiper-controll-container {
+    z-index: 1000;
+    width: 541px;
+    height: 94px;
+    background: $yellow !important;
+    position: absolute;
+    right: 5px;
+    margin: 0;
+    bottom: 0;
+    @media (max-width: $lg) and (min-width: $md) {
+      width: 463px;
+      right: 83px;
+    }
+    @media (max-width: $md) and (min-width: $sm) {
+      width: 329px;
+      height: 50px;
+      right: 3px;
+    }
+    @media (max-width: $sm) {
+      width: 329px;
+      height: 50px;
+      left: 0;
+      right: 16px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .list-group {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    @media (max-width: $sm) {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+
+  .swiper-slide {
+    @media (max-width: $lg) {
+      display: flex;
+      flex-direction: column;
+    }
+    @media (min-width: $xl) {
+      .slide-description {
+        width: 680px;
+        padding-right: 130px;
+        padding-left: 130px;
+      }
+    }
+    @media (min-width: $lg) {
+      .slide-description {
+        position: absolute;
+      }
+    }
+    @media (min-width: $lg) and (max-width: $xl) {
+      .slide-description {
+        width: 300px;
+      }
+    }
+
+    .slide-description {
+      padding-top: 50px;
+
+      h1 {
+        font-family: Gilroy;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+        color: #000000;
+      }
+      p {
+        font-family: Gilroy;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+        color: #000000;
+        padding-bottom: 24px;
+        padding-top: 24px;
+        margin-bottom: 0;
+      }
+      span {
+        display: flex;
+        align-items: center;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 139.4%;
+        letter-spacing: 0.2px;
+        color: #000000;
+      }
+    }
+  }
+}
+
+// swiper

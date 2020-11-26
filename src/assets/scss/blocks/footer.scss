@@ -1,0 +1,96 @@
+.footer {
+  background: #000000;
+  p,
+  h6,
+  li {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    letter-spacing: -0.7px;
+    color: $white;
+  }
+  &__wrapper {
+    display: flex;
+    padding-top: 134px;
+    padding-bottom: 75px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    @media (max-width: $sm) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .logo {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        max-width: 308px;
+        padding-top: 20px;
+        font-weight: 300;
+      }
+    }
+    .navs {
+      li {
+        padding-bottom: 23px;
+        cursor: pointer;
+        a {
+          text-decoration: none;
+          color: $white;
+          transition: 0.3s;
+          outline: none;
+          &:hover {
+            color: $orange;
+          }
+        }
+      }
+    }
+    .address {
+      h6 {
+        span {
+          font-weight: bold;
+        }
+      }
+    }
+    .social-footer {
+      display: flex;
+      flex-direction: column;
+      @media (max-width: $sm) {
+        flex-direction: row;
+      }
+      div {
+        padding-bottom: 20px;
+        @media (max-width: $sm) {
+          padding-right: 20px;
+        }
+        svg {
+          cursor: pointer;
+        }
+        svg:hover {
+          path {
+            fill: $orange;
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom-wrapper {
+    border-top: 0.5px solid rgba(255, 255, 255, 0.29);
+
+    .footer-bottom {
+      padding-bottom: 15px;
+      padding-top: 15px;
+      span {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 0.005em;
+        color: rgba(255, 255, 255, 0.29);
+      }
+    }
+  }
+}

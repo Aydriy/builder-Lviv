@@ -1,0 +1,81 @@
+.contact-section {
+  background-color: $yellow;
+  .container {
+    max-width: 705px;
+  }
+  .contact-form-container {
+    input,
+    textarea {
+      outline: none;
+      background: none;
+      border: none;
+      border-bottom: 0.5px solid #ffffff;
+      padding-bottom: 3px;
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.72);
+      }
+      font-family: Gilroy;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      letter-spacing: 0.07em;
+      color: rgba(255, 255, 255, 0.72);
+    }
+    .contact-head {
+      &__header {
+        font-family: Playfair Display;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 40px;
+        color: $white;
+        padding-top: 45px;
+      }
+      &__description {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 21px;
+        letter-spacing: 0.005em;
+        color: $white;
+      }
+    }
+    form {
+      .form-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-bottom: 42px;
+        input {
+          width: 304px;
+          padding-top: 40px;
+        }
+      }
+    }
+    .message-container {
+      display: flex;
+      flex-direction: column;
+      .form-message {
+        height: 27px;
+      }
+      .btn-container {
+        padding-top: 42px;
+        padding-bottom: 40px;
+        button {
+          border: none;
+          width: 128px;
+          height: 42px;
+          background: $white;
+          font-family: Gilroy;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 19px;
+          color: $yellow;
+        }
+      }
+    }
+  }
+}
